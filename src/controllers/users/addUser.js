@@ -10,6 +10,10 @@ const addUser = async(req, res) => {
   const values = [username, email, hashPassword];
 
   try {
+    const userExist = await db.query("SELECT * FROM users WHERE username=$1 OR email=$2",[username,email])
+    if(userExist.rowCount){
+      return res.status(409).json({ message: 'El usuario ya existe', userExist });
+    }
     const userAdded = await db.query(sqlInsert, values);
     if (userAdded){
       res.status(200).json({"Usuario agregado:": userAdded.rows});

@@ -7,8 +7,10 @@ const getUserById = async(req, res) =>{
   try {
     const user = await db.query(sqlSelect,[id]);
 
-    if(user){
+    if(user.rowCount){
       res.status(200).json(user.rows)
+    }else{
+      res.status(404).json({ message: 'Usuario no encontrado' });
     }
     
   } catch (error) {
