@@ -12,7 +12,7 @@ const addUser = async(req, res) => {
   try {
     const userExist = await db.query("SELECT * FROM users WHERE username=$1 OR email=$2",[username,email])
     if(userExist.rowCount){
-      return res.status(409).json({ message: 'El usuario ya existe', userExist });
+      return res.status(409).json({ message: 'El usuario ya existe'});
     }
     const userAdded = await db.query(sqlInsert, values);
     if (userAdded){
