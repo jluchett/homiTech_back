@@ -6,7 +6,7 @@ const getAllCategories = async (req, res) => {
       res.status(200).json(result.rows);
   } catch (err) {
       console.error(err.message);
-      res.status(500).json({ error: 'Error fetching categories' });
+      res.status(500).json({ error: 'Error al obtener categorias' });
   }
 };
 

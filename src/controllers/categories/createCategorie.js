@@ -10,10 +10,10 @@ const createCategory = async (req, res) => {
       res.status(201).json(result.rows[0]);
   } catch (err) {
       if (err.code === '23505') { // Error de llave única
-          return res.status(400).json({ error: 'Category name already exists' });
+          return res.status(400).json({ error: 'Categoria ya existe' });
       }
       console.error(err.message);
-      res.status(500).json({ error: 'Error creating category' });
+      res.status(500).json({ error: 'Error creaando categoria' });
   }
 };
 
