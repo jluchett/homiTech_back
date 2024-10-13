@@ -16,7 +16,7 @@ app.use(cors());
 app.use('/api/users', usersRouter);
 app.use('/api/categories', categoriesRouter);
 app.use('/api/products', productsRouter);
-app.use('/api/shippingAdress', shippingAdresRouter);
+app.use('/api/shippingAddress', shippingAdresRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
