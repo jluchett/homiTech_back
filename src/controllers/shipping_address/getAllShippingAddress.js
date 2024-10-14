@@ -1,7 +1,7 @@
 const db = require('../../db/dbconn');
 
 const getAllShippingAddress = async(req, res) => {
-  const sqlSelect = "SELECT * FROM shipping_addresses ORDER BY user_id";
+  const sqlSelect = "SELECT * FROM shipping_addresses ORDER BY id";
   try {
     const result = await db.query(sqlSelect);
     if(result.rowCount > 0){
