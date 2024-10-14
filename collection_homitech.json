@@ -1,34 +1,397 @@
 {
-  "requests": [
-    {
-      "name": "AddUser",
-      "url": "http://localhost:5000/api/users/add",
-      "method": "POST"
-    },
-    {
-      "name": "GetAllUsers",
-      "url": "http://localhost:5000/api/users/",
-      "method": "GET"
-    },
-    {
-      "name": "getUserByID",
-      "url": "http://localhost:5000/api/users/get/3",
-      "method": "GET"
-    },
-    {
-      "name": "UpdateUser",
-      "url": "http://localhost:5000/api/users/update/3",
-      "method": "PUT"
-    },
-    {
-      "name": "AddCategorie",
-      "url": "http://localhost:5000/api/categories/add",
-      "method": "POST"
-    },
-    {
-      "name": "getAllCategories",
-      "url": "http://localhost:5000/api/categories",
-      "method": "GET"
-    }
-  ]
+    "clientName": "Thunder Client",
+    "collectionName": "homitech",
+    "collectionId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+    "dateExported": "2024-10-14T19:16:08.733Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "2024a1cd-f1f4-49c2-a3dc-6af86303862d",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-10-05T14:25:03.727Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "30dfb691-5b5a-4720-9a06-30ade82a6312",
+            "name": "categories",
+            "containerId": "",
+            "created": "2024-10-08T02:29:56.088Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "f7348cf9-f638-47d9-a71b-26f03fde9cd9",
+            "name": "products",
+            "containerId": "",
+            "created": "2024-10-10T02:06:51.572Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "66fda085-ef0c-4115-928b-e4c5f4624496",
+            "name": "shippingAddres",
+            "containerId": "",
+            "created": "2024-10-13T03:49:56.072Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "94aefcf7-4bda-4bea-abbf-4cafc4895519",
+            "name": "shoppingCarts",
+            "containerId": "",
+            "created": "2024-10-14T16:41:15.279Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "e21c57aa-c9dd-4740-840b-20681bbc924a",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "2024a1cd-f1f4-49c2-a3dc-6af86303862d",
+            "name": "AddUser",
+            "url": "http://localhost:5000/api/users/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-05T14:25:52.957Z",
+            "modified": "2024-10-08T01:01:57.248Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Yorkel24\",\n  \"email\": \"yorkel@gmail.com\",\n  \"password\": \"HolaMundo\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "594681b8-48b6-4984-83b2-86bfbf6f5276",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "2024a1cd-f1f4-49c2-a3dc-6af86303862d",
+            "name": "GetAllUsers",
+            "url": "http://localhost:5000/api/users/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-10-05T14:48:37.723Z",
+            "modified": "2024-10-05T14:48:49.433Z",
+            "headers": []
+        },
+        {
+            "_id": "c6bc34c2-d1e9-4f0f-959a-32903818a546",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "2024a1cd-f1f4-49c2-a3dc-6af86303862d",
+            "name": "getUserByID",
+            "url": "http://localhost:5000/api/users/get/3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-10-08T01:03:24.265Z",
+            "modified": "2024-10-08T01:13:05.015Z",
+            "headers": []
+        },
+        {
+            "_id": "1e99e059-22e8-473e-a624-56be2c45e372",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "2024a1cd-f1f4-49c2-a3dc-6af86303862d",
+            "name": "UpdateUser",
+            "url": "http://localhost:5000/api/users/update/3",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-10-08T01:06:00.414Z",
+            "modified": "2024-10-08T01:33:39.713Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Yorkel24\",\n  \"email\": \"yorkel24@gmail.com\",\n  \"first_name\": \"York\",\n  \"last_name\": \"Luqueta\",\n  \"phone_number\":\"573002544918\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "20f79fdd-af3f-4547-a7a7-37def4568249",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "30dfb691-5b5a-4720-9a06-30ade82a6312",
+            "name": "AddCategorie",
+            "url": "http://localhost:5000/api/categories/add",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-10-08T02:30:13.469Z",
+            "modified": "2024-10-09T00:52:00.480Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"skjhfs\",\n  \"description\": \"Cslfjslfjhslfhlshd lsjdjlsj llsjkdjjhlksd s\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "04d99d96-4ee4-423a-9e7e-d45125912944",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "30dfb691-5b5a-4720-9a06-30ade82a6312",
+            "name": "getAllCategories",
+            "url": "http://localhost:5000/api/categories",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-10-08T02:39:23.341Z",
+            "modified": "2024-10-08T02:39:43.872Z",
+            "headers": []
+        },
+        {
+            "_id": "2fb9ee43-d7a0-40ee-9f23-db44658b76b1",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "30dfb691-5b5a-4720-9a06-30ade82a6312",
+            "name": "getCategoryById",
+            "url": "http://localhost:5000/api/categories/get/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-10-09T00:23:29.300Z",
+            "modified": "2024-10-09T00:24:34.179Z",
+            "headers": []
+        },
+        {
+            "_id": "3633e0fe-984a-45ca-a0aa-a5292b8997d9",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "30dfb691-5b5a-4720-9a06-30ade82a6312",
+            "name": "updateCategory",
+            "url": "http://localhost:5000/api/categories/update/3",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-10-09T00:31:34.677Z",
+            "modified": "2024-10-09T00:36:56.960Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Educacion\",\n  \"description\": \"Categoria que reune productos escolares\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "32512762-0c42-48c8-a614-cc93b06a1589",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "30dfb691-5b5a-4720-9a06-30ade82a6312",
+            "name": "deleteCategory",
+            "url": "http://localhost:5000/api/categories/delete/6",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-10-09T00:52:34.662Z",
+            "modified": "2024-10-09T00:54:12.471Z",
+            "headers": []
+        },
+        {
+            "_id": "c2fbf662-ef2b-4a9b-b2bd-de4688eb026e",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "f7348cf9-f638-47d9-a71b-26f03fde9cd9",
+            "name": "addProduct",
+            "url": "http://localhost:5000/api/products/add",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-10-10T02:14:27.106Z",
+            "modified": "2024-10-10T03:07:36.568Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"sfksdfskhfkhfdjks sdfs\",\r\n    \"description\": \"Un curso csdfsfsfsdfsdfssdfse cesfsfsdfsntos y aplicaciones avanzadas.\",\r\n    \"price\": 10,\r\n    \"stock_quantity\": 1,\r\n    \"category_id\": 4,\r\n    \"image_url\": \"https://example.com/java-course.jpg\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "06089216-664b-41ea-9d11-fa44db9294b4",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "f7348cf9-f638-47d9-a71b-26f03fde9cd9",
+            "name": "getAllProducts",
+            "url": "http://localhost:5000/api/products/",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-10-10T02:25:59.250Z",
+            "modified": "2024-10-10T02:26:08.097Z",
+            "headers": []
+        },
+        {
+            "_id": "4b8e1036-a9d5-4ba3-8ca5-a4ec08459c69",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "f7348cf9-f638-47d9-a71b-26f03fde9cd9",
+            "name": "getProduById",
+            "url": "http://localhost:5000/api/products/get/2",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-10-10T02:32:54.990Z",
+            "modified": "2024-10-10T02:33:22.735Z",
+            "headers": []
+        },
+        {
+            "_id": "ab415105-7712-4ea3-b38e-f3094f486e6c",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "f7348cf9-f638-47d9-a71b-26f03fde9cd9",
+            "name": "updateProduct",
+            "url": "http://localhost:5000/api/products/update/2",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2024-10-10T03:01:47.886Z",
+            "modified": "2024-10-10T03:03:38.169Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"name\": \"Curso de Programación en Java\",\r\n    \"description\": \"Un curso completo para aprender a programar en Java desde cero, cubriendo fundamentos y aplicaciones avanzadas.\",\r\n    \"price\": 49.99,\r\n    \"stock_quantity\": 50,\r\n    \"category_id\": 3,\r\n    \"image_url\": \"https://example.com/java-course.jpg\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "5f5eb26d-afee-4e94-a9af-d0a2d520289f",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "f7348cf9-f638-47d9-a71b-26f03fde9cd9",
+            "name": "deleteProduct",
+            "url": "http://localhost:5000/api/products/delete/4",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-10-10T03:10:02.048Z",
+            "modified": "2024-10-10T03:10:50.184Z",
+            "headers": []
+        },
+        {
+            "_id": "07606487-0e1e-4466-b97b-19484a44717e",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "66fda085-ef0c-4115-928b-e4c5f4624496",
+            "name": "addShippingAddres",
+            "url": "http://localhost:5000/api/shippingAddress/add",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-10-13T03:55:00.398Z",
+            "modified": "2024-10-14T15:52:24.913Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"user_id\": 2,\n    \"address_line_1\": \"456 Avenida Libertad\",\n    \"address_line_2\": \"Piso 2, Oficina 3\",\n    \"city\": \"Buenos Aires\",\n    \"state\": \"CABA\",\n    \"postal_code\": \"C1000\",\n    \"country\": \"Argentina\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "d3c2afd8-ae45-462a-876c-89df37db9cfb",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "66fda085-ef0c-4115-928b-e4c5f4624496",
+            "name": "getAllShippingAddress",
+            "url": "http://localhost:5000/api/shippingaddress/",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-10-13T04:12:46.153Z",
+            "modified": "2024-10-14T16:36:54.419Z",
+            "headers": []
+        },
+        {
+            "_id": "8af16de1-f01a-48f0-a84b-c6b6d06fa64e",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "66fda085-ef0c-4115-928b-e4c5f4624496",
+            "name": "getShippingAddresByID",
+            "url": "http://localhost:5000/api/shippingAddress/get/1",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-10-13T04:18:20.388Z",
+            "modified": "2024-10-13T04:18:24.316Z",
+            "headers": []
+        },
+        {
+            "_id": "a7e47ba5-c8e6-40c4-b0ff-6afa8ac913d3",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "66fda085-ef0c-4115-928b-e4c5f4624496",
+            "name": "updateShippingAddress",
+            "url": "http://localhost:5000/api/shippingaddress/update/1",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2024-10-13T04:29:01.306Z",
+            "modified": "2024-10-14T16:37:16.793Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"address_line_1\": \"Carrera 18 #24-14\",\n    \"address_line_2\": \"Edificio Torre Santiago, Apartamento 14\",\n    \"city\": \"Barranquilla\",\n    \"state\": \"Atlantico\",\n    \"postal_code\": \"8001020\",\n    \"country\": \"Colombia\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "40716ea3-5170-436c-91bc-6997cb2c8b64",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "66fda085-ef0c-4115-928b-e4c5f4624496",
+            "name": "deleteShippingAddres",
+            "url": "http://localhost:5000/api/shippingAddress/delete/5",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2024-10-14T15:53:17.363Z",
+            "modified": "2024-10-14T15:53:53.187Z",
+            "headers": []
+        },
+        {
+            "_id": "1d8e2bc6-6baf-45a6-a5ed-c64836ee12cb",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "66fda085-ef0c-4115-928b-e4c5f4624496",
+            "name": "getSAByUser",
+            "url": "http://localhost:5000/api/shippingaddress/get/user/3",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-10-14T16:03:43.250Z",
+            "modified": "2024-10-14T16:49:13.360Z",
+            "headers": []
+        },
+        {
+            "_id": "694aaa04-8fd2-48f8-8438-b6f94c5e630d",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "94aefcf7-4bda-4bea-abbf-4cafc4895519",
+            "name": "createShoppingCart",
+            "url": "http://localhost:5000/api/shoppingcarts/add",
+            "method": "POST",
+            "sortNum": 210000,
+            "created": "2024-10-14T16:41:33.681Z",
+            "modified": "2024-10-14T16:53:50.032Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"user_id\": 3\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "9dab6187-b0fb-49ca-9052-cf2cf75d569f",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "94aefcf7-4bda-4bea-abbf-4cafc4895519",
+            "name": "getAllShoppingCarts",
+            "url": "http://localhost:5000/api/shoppingcarts/",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2024-10-14T16:46:02.547Z",
+            "modified": "2024-10-14T16:46:20.663Z",
+            "headers": []
+        },
+        {
+            "_id": "11f8d8ca-dc1e-450d-af16-3cc500c18ecb",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "94aefcf7-4bda-4bea-abbf-4cafc4895519",
+            "name": "getShoppingCartById",
+            "url": "http://localhost:5000/api/shoppingcarts/get/2",
+            "method": "GET",
+            "sortNum": 230000,
+            "created": "2024-10-14T16:50:07.328Z",
+            "modified": "2024-10-14T16:50:32.912Z",
+            "headers": []
+        },
+        {
+            "_id": "f61600a8-26e0-4c96-968e-a3351b1dc482",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "94aefcf7-4bda-4bea-abbf-4cafc4895519",
+            "name": "updateShoppingCart",
+            "url": "http://localhost:5000/api/shoppingcarts/update/3",
+            "method": "PUT",
+            "sortNum": 240000,
+            "created": "2024-10-14T16:54:29.552Z",
+            "modified": "2024-10-14T16:55:59.432Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"user_id\": 3\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "d5b11ffc-564f-4de4-91c9-ddeaf5684393",
+            "colId": "9362b818-8376-4c9b-b5ea-a24c9362c885",
+            "containerId": "94aefcf7-4bda-4bea-abbf-4cafc4895519",
+            "name": "deleteShoppingCart",
+            "url": "http://localhost:5000/api/shoppingcarts/delete/4",
+            "method": "DELETE",
+            "sortNum": 250000,
+            "created": "2024-10-14T17:00:15.551Z",
+            "modified": "2024-10-14T17:00:44.527Z",
+            "headers": []
+        }
+    ],
+    "ref": "YrPpK1R7K7UiFbAqA2dG34eoec7imhMczDd_EpUiO6PXLFstvcuLyADAwVCIv9pf1btHxww55r8iT8yEk2nPJA"
 }
