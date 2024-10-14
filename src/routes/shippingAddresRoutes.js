@@ -13,6 +13,6 @@ router.get('/get/:id', getShippingAddressById)
 router.get('/', getAllShippingAddress);
 router.put('/update/:id', updateShippingAddress);
 router.delete('/delete/:id', deleteShippingAddress);
-router.get('/getbyuser/:user_id', getShippingAddressesByUserId);
+router.get('/get/user/:user_id', getShippingAddressesByUserId);
 
 module.exports = router;

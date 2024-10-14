@@ -5,8 +5,8 @@ require('dotenv').config()
 const usersRouter = require('./src/routes/usersRoutes');
 const categoriesRouter = require('./src/routes/categoriesRoutes');
 const productsRouter = require('./src/routes/productsRoutes');
-
 const shippingAdresRouter = require('./src/routes/shippingAddresRoutes');
+const shoppingCartsRouter = require('./src/routes/shoppingCartsRoutes');
 
 const app = express();
 
@@ -16,7 +16,8 @@ app.use(cors());
 app.use('/api/users', usersRouter);
 app.use('/api/categories', categoriesRouter);
 app.use('/api/products', productsRouter);
-app.use('/api/shippingAddress', shippingAdresRouter);
+app.use('/api/shippingaddress', shippingAdresRouter);
+app.use('/api/shoppingcarts', shoppingCartsRouter)
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
