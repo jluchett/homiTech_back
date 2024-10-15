@@ -1,4 +1,3 @@
-// controllers/updateShoppingCart.js
 const db = require('../../db/dbconn');
 
 const updateShoppingCart = async (req, res) => {

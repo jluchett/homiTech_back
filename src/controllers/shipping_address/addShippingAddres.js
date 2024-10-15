@@ -1,4 +1,4 @@
-const db = require('../../db/dbconn'); // Importa la conexión a la base de datos
+const db = require('../../db/dbconn');
 
 const createShippingAddress = async (req, res) => {
     const { user_id, address_line_1, address_line_2, city, state, postal_code, country } = req.body;

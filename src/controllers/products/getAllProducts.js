@@ -2,7 +2,7 @@ const db = require('../../db/dbconn');
 
 const getAllProducts = async (req, res) => {
     try {
-        const result = await db.query(`SELECT * FROM products`);
+        const result = await db.query(`SELECT * FROM products ORDER BY id`);
 
         res.json(result.rows);
     } catch (error) {

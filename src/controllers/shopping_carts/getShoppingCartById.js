@@ -1,4 +1,3 @@
-// controllers/getShoppingCartById.js
 const db = require('../../db/dbconn');
 
 const getShoppingCartById = async (req, res) => {

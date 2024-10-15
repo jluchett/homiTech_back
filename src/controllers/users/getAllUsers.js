@@ -1,7 +1,7 @@
 const db = require('../../db/dbconn');
 
 const getAllUsers = async(req, res) =>{
-    const sqlSelect = "SELECT * FROM users ORDER BY first_name";
+    const sqlSelect = "SELECT * FROM users ORDER BY id";
     try {
         const AllUsers = await db.query(sqlSelect);
         if(AllUsers){

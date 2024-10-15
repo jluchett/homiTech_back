@@ -1,5 +1,4 @@
-// controllers/createShoppingCart.js
-const db = require('../../db/dbconn'); // Asegúrate de configurar tu pool de PostgreSQL
+const db = require('../../db/dbconn');
 
 const createShoppingCart = async (req, res) => {
     const { user_id } = req.body;

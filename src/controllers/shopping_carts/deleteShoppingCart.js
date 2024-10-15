@@ -1,4 +1,3 @@
-// controllers/deleteShoppingCart.js
 const db = require('../../db/dbconn');
 
 const deleteShoppingCart = async (req, res) => {

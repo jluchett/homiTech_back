@@ -1,9 +1,8 @@
-// controllers/getAllShoppingCarts.js
 const db = require('../../db/dbconn');
 
 const getAllShoppingCarts = async (req, res) => {
     try {
-        const result = await db.query('SELECT * FROM shopping_carts');
+        const result = await db.query('SELECT * FROM shopping_carts ORDER BY id');
         res.json(result.rows);
     } catch (error) {
         console.error(error.message);
