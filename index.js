@@ -11,6 +11,7 @@ const cartItemsRouter = require('./src/routes/cartItemsRoutes');
 const ordersRouter = require('./src/routes/ordersRoutes');
 const orderItemsRouter = require('./src/routes/orderItemsRoutes');
 const paymentsRouter = require('./src/routes/paymentsRoutes');
+const shipmentsRouter = require('./src/routes/shipmentsRoutes');
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use('/cartitems', cartItemsRouter);
 app.use('/orders', ordersRouter);
 app.use('/orderItems', orderItemsRouter)
 app.use('/payments', paymentsRouter);
+app.use('/shipments', shipmentsRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
