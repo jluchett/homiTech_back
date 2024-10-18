@@ -16,14 +16,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use('/api/users', usersRouter);
-app.use('/api/categories', categoriesRouter);
-app.use('/api/products', productsRouter);
-app.use('/api/shippingaddress', shippingAdresRouter);
-app.use('/api/shoppingcarts', shoppingCartsRouter);
-app.use('/api/cartitems', cartItemsRouter);
-app.use('/api/orders', ordersRouter);
-app.use('/api/orderItems', orderItemsRouter)
+app.use('/users', usersRouter);
+app.use('/categories', categoriesRouter);
+app.use('/products', productsRouter);
+app.use('/shippingaddress', shippingAdresRouter);
+app.use('/shoppingcarts', shoppingCartsRouter);
+app.use('/cartitems', cartItemsRouter);
+app.use('/orders', ordersRouter);
+app.use('/orderItems', orderItemsRouter)
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
