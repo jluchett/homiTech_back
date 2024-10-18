@@ -12,6 +12,7 @@ const ordersRouter = require('./src/routes/ordersRoutes');
 const orderItemsRouter = require('./src/routes/orderItemsRoutes');
 const paymentsRouter = require('./src/routes/paymentsRoutes');
 const shipmentsRouter = require('./src/routes/shipmentsRoutes');
+const reviewsRouter = require('./src/routes/reviewsRoutes')
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use('/orders', ordersRouter);
 app.use('/orderItems', orderItemsRouter)
 app.use('/payments', paymentsRouter);
 app.use('/shipments', shipmentsRouter);
+app.use('/reviews', reviewsRouter);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
