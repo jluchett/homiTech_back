@@ -163,9 +163,9 @@ VALUES
 (1, 1, 1),  -- John Doe's cart contains 1 smartphone
 (1, 3, 2),  -- John Doe's cart contains 2 coffee makers
 (2, 2, 3),  -- Jane Smith's cart contains 3 pairs of jeans
-(3, 6, 2),  -- Michael Brown's cart contains 2 skincare sets
-(3, 5, 1),  -- Michael Brown's cart contains 1 mystery novel
-(4, 7, 1);  -- Emily Jones' cart contains 1 gaming laptop
+(3, 5, 2),  -- Michael Brown's cart contains 2 skincare sets
+(3, 4, 1),  -- Michael Brown's cart contains 1 mystery novel
+(4, 6, 1);  -- Emily Jones' cart contains 1 gaming laptop
 
 INSERT INTO orders (user_id, shipping_address_id, total, status)
 VALUES 
@@ -179,9 +179,9 @@ VALUES
 (1, 1, 1, 699.99),  -- 1 smartphone for John Doe
 (1, 3, 2, 89.99),   -- 2 coffee makers for John Doe
 (2, 2, 3, 39.99),   -- 3 pairs of jeans for Jane Smith
-(3, 6, 2, 49.99),  -- 2 skincare sets for Michael Brown
-(3, 5, 1, 14.99),  -- 1 mystery novel for Michael Brown
-(4, 7, 1, 1999.99);  -- 1 gaming laptop for Emily Jones
+(3, 5, 2, 49.99),  -- 2 skincare sets for Michael Brown
+(3, 4, 1, 14.99),  -- 1 mystery novel for Michael Brown
+(4, 6, 1, 1999.99);  -- 1 gaming laptop for Emily Jones
 
 INSERT INTO payments (order_id, amount, payment_method, payment_status, payment_date)
 VALUES 
@@ -201,15 +201,15 @@ INSERT INTO product_reviews (product_id, user_id, rating, review)
 VALUES 
 (1, 1, 5, 'Great smartphone, very satisfied with the purchase!'),
 (2, 2, 4, 'Jeans are good, but the sizing could be better.'),
-(5, 3, 4, 'Good read, but the plot was predictable.'),
-(6, 4, 5, 'Excellent skincare set, my skin has never looked better!'),
-(7, 4, 5, 'Best gaming laptop I have ever used!');
+(4, 3, 4, 'Good read, but the plot was predictable.'),
+(5, 3, 5, 'Excellent skincare set, my skin has never looked better!'),
+(6, 4, 5, 'Best gaming laptop I have ever used!');
 
 INSERT INTO inventory_logs (product_id, change_type, quantity)
 VALUES 
 (1, 'purchase', -1),  -- 1 smartphone sold
 (3, 'purchase', -2),  -- 2 coffee makers sold
 (2, 'purchase', -3),  -- 3 pairs of jeans sold
-(6, 'purchase', -2),  -- 2 skincare sets sold
-(5, 'purchase', -1),  -- 1 mystery novel sold
-(7, 'purchase', -1);  -- 1 gaming laptop sold
+(5, 'purchase', -2),  -- 2 skincare sets sold
+(4, 'purchase', -1),  -- 1 mystery novel sold
+(6, 'purchase', -1);  -- 1 gaming laptop sold

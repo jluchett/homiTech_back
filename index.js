@@ -33,7 +33,7 @@ app.use('/shipments', shipmentsRouter);
 app.use('/reviews', reviewsRouter);
 app.use('/inventorylogs', inventaoryLogsRouter);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
